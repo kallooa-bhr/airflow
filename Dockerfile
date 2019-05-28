@@ -193,5 +193,5 @@ WORKDIR ${AIRFLOW_HOME}
 COPY --chown=airflow:airflow ./scripts/docker/entrypoint.sh /entrypoint.sh
 
 EXPOSE 8080
-ENTRYPOINT ["/usr/local/bin/dumb-init", "--", "/entrypoint.sh"]
-CMD ["--help"]
+#ENTRYPOINT ["/usr/local/bin/dumb-init", "--", "/entrypoint.sh"]
+#CMD ["--help"]
